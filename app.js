@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var sass = require('node-sass');
+
 var app = express();
 
 // view engine setup
@@ -19,6 +21,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+
+app.use(sass.middleware({
+    src: __dirname + '/views/',
+    dest: __dirname + '/public',
+    debug: true
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
