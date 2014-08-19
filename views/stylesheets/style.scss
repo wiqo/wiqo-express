@@ -8,3 +8,54 @@ body {
 .showcase-image {
 	width: 100%;
 }
+
+.inline-image {
+    width: 49%;
+    padding: 5.1px
+}
+
+#nav {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(178, 202, 255, 0.9);
+    height:58px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+#nav li {
+    margin: 0px;
+    display:
+}
+
+#nav li a {
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #e6f5ff;
+    background-color: rgba(178, 202, 255, 0);
+    float: left
+}
+
+#nav li a:hover {
+    color: #FFFFFF;
+    background-color: #6a95ff;
+}
+
+.description h1{
+    text-align: center;
+    padding: 10px;
+    color: rgba(74, 0, 20, 0.49);
+}
+
+.description p {
+    padding: 10px
+}
